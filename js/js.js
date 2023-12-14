@@ -40,3 +40,20 @@ const sliderWrapper = document.querySelector('.slider-wrapper');
 
   createDots(); // Create dots dynamically
   setInterval(nextCard, 3000); // Auto slide every 3 seconds (adjust as needed)
+
+
+  function toggleSection(sectionNumber) {
+    const section = document.getElementById(`section${sectionNumber}`);
+    const header = document.querySelector(`.header:nth-child(${sectionNumber * 2 - 1})`);
+    const icon = header.querySelector('.icon');
+
+    if (section.classList.contains('active')) {
+      section.classList.remove('active');
+      header.classList.remove('active');
+      icon.textContent = '+';
+    } else {
+      section.classList.add('active');
+      header.classList.add('active');
+      icon.textContent = '-';
+    }
+  }
