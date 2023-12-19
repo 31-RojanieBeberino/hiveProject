@@ -1,3 +1,26 @@
+$(document).ready(function(){
+  
+
+  var  toggleBtn = $('.navbar-toggle');
+  var modalSec = $('.navbar-mobile');
+  var menuList = $('.navbar-links');
+
+  toggleBtn.on('click', function(){
+    modalSec.addClass('active-nav-mobile');
+    menuList.addClass('active-link');
+  });
+
+  modalSec.on('click', function(){
+    modalSec.removeClass('active-nav-mobile');
+    menuList.removeClass('active-link');
+  });
+
+
+});
+
+
+
+
 const sliderWrapper = document.querySelector('.slider-wrapper');
   const dotsContainer = document.querySelector('.slider-dots');
   let currentIndex = 0;

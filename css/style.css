@@ -7,38 +7,38 @@
 
 @font-face {
     font-family: General Sans;
-    src: url(/fonts/GeneralSans-Bold.otf);
+    src: url(../fonts/GeneralSans-Bold.otf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: General Sans;
-    src: url(/fonts/GeneralSans-Semibold.otf);
+    src: url(../fonts/GeneralSans-Semibold.otf);
     font-weight: 600;
 }
 
 @font-face {
     font-family: General Sans;
-    src: url(/fonts/GeneralSans-Medium.otf);
+    src: url(../fonts/GeneralSans-Medium.otf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: General Sans;
-    src: url(/fonts/GeneralSans-Regular.otf);
+    src: url(../fonts/GeneralSans-Regular.otf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: General Sans;
-    src: url(/fonts/GeneralSans-Light.otf);
+    src: url(../fonts/GeneralSans-Light.otf);
     font-weight: 300;
 }
 
 
 body{
     background-color: #000;
-    background-image: url(/image/image.webp);
+    background-image: url(../image/image.webp);
     background-size: 50%;
     background-position: top left;
     background-repeat: no-repeat;
@@ -52,6 +52,7 @@ nav{
     justify-content: center;
     align-items: center;
     padding:20px;
+    z-index: 99;
 }
 
 .main-nav{
@@ -100,6 +101,72 @@ nav{
 }
 
 
+.navbar-mobile{
+  background-color: #0000009d;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: all .4s;
+}
+
+.navbar-links{
+  padding:20px;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  background: rgb(238,185,14);
+  background: linear-gradient(180deg, rgba(238,185,14,1) 0%, rgba(238,139,14,1) 100%);
+  transform: translateX(100%);
+  transition: all .4s;
+}
+
+.active-link{
+  transform: translateX(0%);
+}
+
+.active-nav-mobile{
+  opacity: 1;
+  z-index: 100;
+}
+
+.navbar-links li a:hover{
+  color:#000!important;
+}
+
+.navbar-links .nav-brand{
+  width: 70%!important;
+}
+
+.navbar-links .nav-brand img{
+  width: 100%!important;
+  padding:10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.navbar-toggle .bar{
+  width: 80%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.navbar-toggle{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  display: none;
+}
+
 .nav-button{
     width: 15%;
     display: flex;
@@ -115,7 +182,7 @@ nav{
     transition: .4s;
     text-decoration: none;
     text-transform: uppercase;
-    background-image: url(/image/buttonBG.webp);
+    background-image: url(../image/buttonBG.webp);
     background-size: contain;
     background-position: center center;
 }
@@ -133,6 +200,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:20px;
+    z-index: -1;
 }
 
 .inner-section{
@@ -182,7 +251,7 @@ nav{
     transition: .4s;
     text-decoration: none;
     text-transform: uppercase;
-    background-image: url(/image/buttonBG.webp);
+    background-image: url(../image/buttonBG.webp);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -709,7 +778,7 @@ nav{
   .hex1-slider5 .hexagon-inner{
     top:5px;
     left: 10px;
-    background-image: url('/image/image15.webp')!important;
+    background-image: url('../image/image15.webp')!important;
   }
 
 
@@ -722,7 +791,7 @@ nav{
   .hex2-slider5 .hexagon-inner{
     top:5px;
     left: 10px;
-    background-image: url('/image/image16.webp')!important;
+    background-image: url('../image/image16.webp')!important;
   }
 
   .hex3-slider5{
@@ -733,7 +802,7 @@ nav{
   .hex3-slider5 .hexagon-inner{
     top:5px;
     left: 10px;
-    background-image: url('/image/image17.webp')!important;
+    background-image: url('../image/image17.webp')!important;
   }
 
   .hex4-slider5{
@@ -744,7 +813,7 @@ nav{
   .hex4-slider5 .hexagon-inner{
     top:5px;
     left: 10px;
-    background-image: url('/image/image18.webp')!important;
+    background-image: url('../image/image18.webp')!important;
   }
 
 
@@ -756,7 +825,7 @@ nav{
   .hex5-slider5 .hexagon-inner{
     top:5px;
     left: 10px;
-    background-image: url('/image/image19.webp')!important;
+    background-image: url('../image/image19.webp')!important;
   }
 
   .overlay-shape{
@@ -811,7 +880,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/image/image21.webp);
+    background-image: url(../image/image21.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -904,7 +973,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/image/hexImg.webp);
+    background-image: url(../image/hexImg.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1027,7 +1096,7 @@ nav{
 
 
   .slider10{
-    background-image: url(/image/image24.webp);
+    background-image: url(../image/image24.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1158,4 +1227,212 @@ nav{
    color:#747474;
    font-family: General Sans;
    font-weight: 400;
+}
+
+/* PAGES CSS  */
+
+
+.footer-pages{
+  position: relative;
+}
+
+
+.page-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:200px 20px;
+}
+
+.inner-page-section{
+  width:1300px;
+  display: flex;
+  gap: 20px;
+}
+
+.section-content{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-content h1{
+  font-family: General Sans;
+  font-size: 55px;
+  font-weight: 700;
+  color:#fff;
+  line-height: 1.2em;
+}
+
+.section-content span {
+  color:#EEB90E;
+}
+
+.page-sec-image{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.page-hexagon{
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: rgb(238,185,14);
+  background: linear-gradient(180deg, rgba(238,185,14,1) 0%, rgba(238,139,14,1) 100%);
+}
+
+.page-hexagon .hexagon-inner{
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.sec-hex1{
+  width: 450px;
+  height: 400px;
+}
+
+
+.sec-hex1 .hexagon-inner{
+  width: 410px;
+  height: 360px;
+  top:20px;
+  left: 20px;
+}
+
+.sec-hex1 .hexagon-inner{
+  background-image: url(../image/image36.webp);
+}
+
+.card-1 {
+  position: relative;
+}
+
+.hex-card .hex-bg1{
+  position: absolute;
+  z-index: 0;
+  width: 450px;
+  height: 400px;
+  top: -20px;
+  right: -30px;
+}
+
+
+.sec-hex2{
+  width: 170px;
+  height: 150px;
+}
+
+
+.sec-hex2 .hexagon-inner{
+  width: 150px;
+  height: 130px;
+  top:10px;
+  left: 10px;
+}
+
+.sec-hex2 .hexagon-inner{
+  background-image: url(../image/image38.webp);
+}
+
+.card-2 {
+  position: absolute;
+  bottom: 60px;
+  left: -90px;
+}
+
+.hex-card .hex-bg2{
+  position: absolute;
+  z-index: 0;
+  width: 170px;
+  height: 150px;
+  bottom: -10px;
+  left: -20px;
+}
+
+
+
+.sec-hex3{
+  width: 170px;
+  height: 150px;
+}
+
+
+.sec-hex3 .hexagon-inner{
+  width: 150px;
+  height: 130px;
+  top:10px;
+  left: 10px;
+}
+
+.sec-hex3 .hexagon-inner{
+  background-image: url(../image/image39.webp);
+}
+
+.card-3 {
+  position: absolute;
+  top: -190px;
+  right:50px;
+}
+
+.hex-card .hex-bg3{
+  position: absolute;
+  z-index: 0;
+  width: 170px;
+  height: 150px;
+  top: -8px;
+  left: -20px;
+}
+
+
+
+.sec-hex4{
+  width: 170px;
+  height: 150px;
+}
+
+
+.sec-hex4 .hexagon-inner{
+  width: 150px;
+  height: 130px;
+  top:10px;
+  left: 10px;
+}
+
+.sec-hex4 .hexagon-inner{
+  background-image: url(../image/image40.webp);
+}
+
+.card-4 {
+  position: absolute;
+  bottom: -130px;
+  right: 0px;
+}
+
+.hex-card .hex-bg4{
+  position: absolute;
+  z-index: 0;
+  width: 170px;
+  height: 150px;
+  bottom: -10px;
+  right: -20px;
+}
+
+
+
+.second-section{
+  background-color: #ffffff23;
+  border:0px 1px 1px 1px #EEB90E;
+}
+
+
+.page-sec-image .second-section-image{
+  width: 100%;
 }

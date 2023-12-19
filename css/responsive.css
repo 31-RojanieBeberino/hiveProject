@@ -1,0 +1,82 @@
+@media screen and (max-width:1024px){
+
+
+    /* Navbar */
+    .nav-list ul{
+        gap:10px;
+    }
+    
+    .nav-list ul li a{
+        padding:10px 15px;
+        font-size: 13px;
+    }
+
+    .inner-section{
+        gap:20px;
+        margin-top: 0px;
+    }
+
+    .contactBtn{
+        padding: 20px 25px;
+        font-size: 14px;
+        background-repeat: no-repeat;
+
+    }
+
+
+    /* section Slider 1 */
+
+
+    .content h4{
+        font-size: 20px;
+    }
+
+    .content h1{
+        font-size: 45px;
+    }
+
+    .secButton{
+        margin-top: 20px;
+        padding: 25px 35px;
+        font-size: 13px;
+    }
+}
+
+
+
+@media screen and (max-width:500px){
+    .desktop-menu{
+        display: none!important;
+    }
+
+    .nav-button{
+        display: none!important;
+    }
+
+    .navbar-toggle{
+        display: flex;
+    }
+
+    .nav-brand{
+        width: 70%;
+    }
+
+    .main-nav{
+        justify-content: space-between;
+    }
+}
+
+
+/* @media only screen and (max-width: 768px) {
+    .navbar a {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar.active a {
+        display: block;
+    }
+} */
