@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="main-nav">
-            <div class="nav-brand">
-                <img src="image/logo.webp">
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li><a href="#" class="active">Product</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="nav-button">
-                <a href="#" class="contactBtn">Contant</a>
-            </div>
+      <div class="main-nav">
+        <div class="nav-brand">
+          <img src="image/logo.webp" />
         </div>
+        <div class="nav-list">
+          <ul class="desktop-menu">
+            <li><a href="#" class="active">Product</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <div class="navbar-toggle" id="navbarToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="navbar-mobile" id="myModal">
+            <ul class="navbar-links" id="navbarLinks">
+              <div class="nav-brand">
+                <img src="image/logo.webp" />
+              </div>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-button">
+          <a href="#" class="contactBtn">Contant</a>
+        </div>
+      </div>
     </nav>
-
-
     <section class="slide">
         <div class="inner-section slider8">
-            <div class="content">
+            <div class="content res-cont4">
                 <h1>Frequently Asked <span class="coloredText">Questions</span></h1>
                 <a href="#"><button class="secButton">learn more</button></a>
             </div>
@@ -75,8 +94,7 @@
                 </div>
         </div>
     </section>
-
-
-</body>
-<script src="js/js.js"></script>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/js.js"></script>
 </html>

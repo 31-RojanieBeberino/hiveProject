@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="main-nav">
-            <div class="nav-brand">
-                <img src="image/logo.webp">
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li><a href="#" class="active">Product</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="nav-button">
-                <a href="#" class="contactBtn">Contant</a>
-            </div>
+      <div class="main-nav">
+        <div class="nav-brand">
+          <img src="image/logo.webp" />
         </div>
+        <div class="nav-list">
+          <ul class="desktop-menu">
+            <li><a href="#" class="active">Product</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <div class="navbar-toggle" id="navbarToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="navbar-mobile" id="myModal">
+            <ul class="navbar-links" id="navbarLinks">
+              <div class="nav-brand">
+                <img src="image/logo.webp" />
+              </div>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-button">
+          <a href="#" class="contactBtn">Contant</a>
+        </div>
+      </div>
     </nav>
-
-
     <section class="slide">
-        <div class="inner-section">
-            <div class="image-section">
-                <img src="image/image14.webp" alt="">
-            </div>
-            <div class="content">
-                <h1><span class="coloredText">Technology</span></h1>
-                <p>Don't let technology stand in the way of your goals. Beehive empowers you to leverage technology to your advantage.
-                </p><br>
-                <p>Our experts will work closely with you to bring your vision to life, while you can focus on running your business. Our team includes veterans from the software development world, with rich expertise in backend development, data architectures, mobile and web app developments, and of course AI.
-                </p>
-                <a href="#"><button class="secButton">contact</button></a>
-            </div>
+      <div class="inner-section res-2">
+        <div class="image-section">
+          <img src="image/image14.webp" alt="" />
         </div>
+        <div class="content res-cont2">
+          <h1><span class="coloredText">Technology</span></h1>
+          <p>
+            Don't let technology stand in the way of your goals. Beehive
+            empowers you to leverage technology to your advantage.
+          </p>
+          <br />
+          <p>
+            Our experts will work closely with you to bring your vision to life,
+            while you can focus on running your business. Our team includes
+            veterans from the software development world, with rich expertise in
+            backend development, data architectures, mobile and web app
+            developments, and of course AI.
+          </p>
+          <a href="#"><button class="secButton">contact</button></a>
+        </div>
+      </div>
     </section>
-
-
-</body>
-<script src="js/js.js"></script>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/js.js"></script>
 </html>
